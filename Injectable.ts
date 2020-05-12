@@ -1,4 +1,4 @@
-import { Constructable } from "./Constructable.ts";
+import { Constructable } from "./Constructable";
 
 /**
  * Class Decorator,  it receives a Constructible function.

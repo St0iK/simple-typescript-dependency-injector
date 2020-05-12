@@ -1,0 +1,26 @@
+{
+    "name": "simple-typescript-dependency-injector",
+    "version": "1.0.0",
+    "description": "simple-typescript-dependency-injector",
+    "main": "index.js",
+    "scripts": {
+        "lint": "tslint -c tslint.json src/**/*.ts",
+        "prebuild": "rimraf dist"
+    },
+    "keywords": [
+        "di",
+        "dependency",
+        "injection",
+        "typescript"
+    ],
+    "license": "MIT",
+    "devDependencies": {
+        "@types/node": "^10.5.2",
+        "rimraf": "^2.6.2",
+        "tslint": "^5.11.0",
+        "typescript": "^2.9.2"
+    },
+    "dependencies": {
+        "reflect-metadata": "^0.1.13"
+    }
+}

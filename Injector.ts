@@ -1,4 +1,5 @@
-import { Constructable } from "./Constructable.ts";
+import { Constructable } from "./Constructable";
+import "reflect-metadata";
 
 export class Injector {
   private diMap = new Map();
@@ -35,7 +36,7 @@ export class Injector {
 
     // build the current instance, and store it to our Map
     currentInstance = new constructor(...argumentsInstances);
-    this.diMap.setKey(constructor, currentInstance);
+    this.diMap.set(constructor, currentInstance);
 
     return currentInstance;
   }
